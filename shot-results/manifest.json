@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-31T16:18:02+0800",
+  "input_name": "aios-shot-materials",
+  "output_name": "shot-results",
+  "parameters": {
+    "scene_threshold": 0.2,
+    "adaptive_floor": 0.14,
+    "adaptive_delta": 0.045,
+    "adaptive_mad_factor": 3.5,
+    "merge_gap_seconds": 0.18,
+    "edge_ignore_seconds": 0.2,
+    "flash_similarity_threshold": 0.2,
+    "analysis_width": 180
+  },
+  "summary": {
+    "discovered": 3,
+    "succeeded": 3,
+    "failed": 0,
+    "total_shots": 148,
+    "elapsed_seconds": 10.954
+  },
+  "videos": [
+    {
+      "video_id": "sample-01",
+      "status": "success",
+      "source_file": "sample-01.mp4",
+      "shot_count": 46,
+      "boundary_count": 45,
+      "duration_seconds": 160.333,
+      "processing_seconds": 3.588,
+      "result_dir": "sample-01",
+      "contact_sheet": "sample-01/contact-sheet.jpg",
+      "shots_flagged_for_review": [
+        5,
+        6,
+        8,
+        11,
+        12,
+        15,
+        16,
+        18,
+        20,
+        22,
+        23,
+        24,
+        28,
+        34,
+        43,
+        44
+      ]
+    },
+    {
+      "video_id": "sample-02",
+      "status": "success",
+      "source_file": "sample-02.mp4",
+      "shot_count": 65,
+      "boundary_count": 64,
+      "duration_seconds": 137.933,
+      "processing_seconds": 4.057,
+      "result_dir": "sample-02",
+      "contact_sheet": "sample-02/contact-sheet.jpg",
+      "shots_flagged_for_review": [
+        11,
+        12,
+        14,
+        36,
+        42,
+        43,
+        60
+      ]
+    },
+    {
+      "video_id": "sample-03",
+      "status": "success",
+      "source_file": "sample-03.mp4",
+      "shot_count": 37,
+      "boundary_count": 36,
+      "duration_seconds": 157.733,
+      "processing_seconds": 3.301,
+      "result_dir": "sample-03",
+      "contact_sheet": "sample-03/contact-sheet.jpg",
+      "shots_flagged_for_review": [
+        2,
+        5,
+        6,
+        15,
+        17,
+        19,
+        21,
+        22,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        34,
+        35,
+        36
+      ]
+    }
+  ],
+  "failures": []
+}

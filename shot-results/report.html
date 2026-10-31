@@ -1,0 +1,1708 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIOS 镜头切分结果</title>
+  <style>
+    :root { color-scheme: dark; --bg:#101315; --panel:#191e21; --muted:#9aa6ad; --accent:#85d6bd; }
+    * { box-sizing: border-box; }
+    body { margin:0; padding:32px; background:var(--bg); color:#f3f6f7; font:14px/1.55 system-ui,sans-serif; }
+    main { max-width:1440px; margin:auto; }
+    header { margin-bottom:30px; }
+    h1 { font-size:30px; margin:0 0 8px; }
+    h2 { margin:0 0 4px; font-size:20px; }
+    p { color:var(--muted); margin:0; }
+    a { color:var(--accent); text-decoration:none; }
+    section { margin:30px 0; padding:22px; background:var(--panel); border:1px solid #293136; border-radius:14px; }
+    .heading { display:flex; justify-content:space-between; gap:20px; align-items:center; margin-bottom:18px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(145px,1fr)); gap:12px; }
+    .shot { overflow:hidden; background:#0e1113; border-radius:9px; border:1px solid #2a3338; }
+    .shot img { display:block; width:100%; aspect-ratio:9/16; object-fit:cover; background:#171b1d; }
+    .meta { display:flex; flex-direction:column; padding:9px; gap:2px; }
+    .meta span { color:var(--muted); font-size:12px; }
+    .failure { border-color:#63383a; }
+    footer { color:var(--muted); margin:32px 0 8px; }
+    code { color:#d8e3e7; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>AIOS 镜头切分结果</h1>
+    <p>固定阈值 0.2 · 自适应下限 0.14 ·
+       合并间隔 0.18s · 总耗时 10.95s</p>
+  </header>
+  
+            <section>
+              <div class="heading">
+                <div>
+                  <h2>sample-01.mp4</h2>
+                  <p>46 个镜头 · 160.33 秒 ·
+                     16 个建议复核</p>
+                </div>
+                <a href="sample-01/contact-sheet.jpg">打开总览图</a>
+              </div>
+              <div class="grid">
+                
+            <article class="shot">
+              <img src="sample-01/previews/shot_0001.jpg" loading="lazy" alt="Shot 1">
+              <div class="meta">
+                <strong>#001</strong>
+                <span>0.00–1.53s</span>
+                <span>1.53s · high</span>
+                <span>视频起点</span>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0002.jpg" loading="lazy" alt="Shot 2">
+              <div class="meta">
+                <strong>#002</strong>
+                <span>1.53–2.33s</span>
+                <span>0.80s · medium</span>
+                <a href="sample-01/boundaries/boundary_0001.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0003.jpg" loading="lazy" alt="Shot 3">
+              <div class="meta">
+                <strong>#003</strong>
+                <span>2.33–3.20s</span>
+                <span>0.87s · high</span>
+                <a href="sample-01/boundaries/boundary_0002.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0004.jpg" loading="lazy" alt="Shot 4">
+              <div class="meta">
+                <strong>#004</strong>
+                <span>3.20–3.73s</span>
+                <span>0.53s · medium</span>
+                <a href="sample-01/boundaries/boundary_0003.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0005.jpg" loading="lazy" alt="Shot 5">
+              <div class="meta">
+                <strong>#005</strong>
+                <span>3.73–4.00s</span>
+                <span>0.27s · medium · review</span>
+                <a href="sample-01/boundaries/boundary_0004.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0006.jpg" loading="lazy" alt="Shot 6">
+              <div class="meta">
+                <strong>#006</strong>
+                <span>4.00–4.40s</span>
+                <span>0.40s · low · review</span>
+                <a href="sample-01/boundaries/boundary_0005.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0007.jpg" loading="lazy" alt="Shot 7">
+              <div class="meta">
+                <strong>#007</strong>
+                <span>4.40–5.13s</span>
+                <span>0.73s · medium</span>
+                <a href="sample-01/boundaries/boundary_0006.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0008.jpg" loading="lazy" alt="Shot 8">
+              <div class="meta">
+                <strong>#008</strong>
+                <span>5.13–5.80s</span>
+                <span>0.67s · low · review</span>
+                <a href="sample-01/boundaries/boundary_0007.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0009.jpg" loading="lazy" alt="Shot 9">
+              <div class="meta">
+                <strong>#009</strong>
+                <span>5.80–7.40s</span>
+                <span>1.60s · medium</span>
+                <a href="sample-01/boundaries/boundary_0008.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0010.jpg" loading="lazy" alt="Shot 10">
+              <div class="meta">
+                <strong>#010</strong>
+                <span>7.40–8.47s</span>
+                <span>1.07s · high</span>
+                <a href="sample-01/boundaries/boundary_0009.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0011.jpg" loading="lazy" alt="Shot 11">
+              <div class="meta">
+                <strong>#011</strong>
+                <span>8.47–9.13s</span>
+                <span>0.67s · low · review</span>
+                <a href="sample-01/boundaries/boundary_0010.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0012.jpg" loading="lazy" alt="Shot 12">
+              <div class="meta">
+                <strong>#012</strong>
+                <span>9.13–10.47s</span>
+                <span>1.33s · low · review</span>
+                <a href="sample-01/boundaries/boundary_0011.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0013.jpg" loading="lazy" alt="Shot 13">
+              <div class="meta">
+                <strong>#013</strong>
+                <span>10.47–12.00s</span>
+                <span>1.53s · medium</span>
+                <a href="sample-01/boundaries/boundary_0012.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0014.jpg" loading="lazy" alt="Shot 14">
+              <div class="meta">
+                <strong>#014</strong>
+                <span>12.00–12.87s</span>
+                <span>0.87s · high</span>
+                <a href="sample-01/boundaries/boundary_0013.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0015.jpg" loading="lazy" alt="Shot 15">
+              <div class="meta">
+                <strong>#015</strong>
+                <span>12.87–13.13s</span>
+                <span>0.27s · high · review</span>
+                <a href="sample-01/boundaries/boundary_0014.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0016.jpg" loading="lazy" alt="Shot 16">
+              <div class="meta">
+                <strong>#016</strong>
+                <span>13.13–13.53s</span>
+                <span>0.40s · medium · review</span>
+                <a href="sample-01/boundaries/boundary_0015.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0017.jpg" loading="lazy" alt="Shot 17">
+              <div class="meta">
+                <strong>#017</strong>
+                <span>13.53–14.33s</span>
+                <span>0.80s · medium</span>
+                <a href="sample-01/boundaries/boundary_0016.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0018.jpg" loading="lazy" alt="Shot 18">
+              <div class="meta">
+                <strong>#018</strong>
+                <span>14.33–14.60s</span>
+                <span>0.27s · medium · review</span>
+                <a href="sample-01/boundaries/boundary_0017.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0019.jpg" loading="lazy" alt="Shot 19">
+              <div class="meta">
+                <strong>#019</strong>
+                <span>14.60–15.13s</span>
+                <span>0.53s · high</span>
+                <a href="sample-01/boundaries/boundary_0018.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0020.jpg" loading="lazy" alt="Shot 20">
+              <div class="meta">
+                <strong>#020</strong>
+                <span>15.13–30.87s</span>
+                <span>15.73s · low · review</span>
+                <a href="sample-01/boundaries/boundary_0019.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0021.jpg" loading="lazy" alt="Shot 21">
+              <div class="meta">
+                <strong>#021</strong>
+                <span>30.87–42.87s</span>
+                <span>12.00s · medium</span>
+                <a href="sample-01/boundaries/boundary_0020.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0022.jpg" loading="lazy" alt="Shot 22">
+              <div class="meta">
+                <strong>#022</strong>
+                <span>42.87–51.27s</span>
+                <span>8.40s · low · review</span>
+                <a href="sample-01/boundaries/boundary_0021.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0023.jpg" loading="lazy" alt="Shot 23">
+              <div class="meta">
+                <strong>#023</strong>
+                <span>51.27–67.27s</span>
+                <span>16.00s · low · review</span>
+                <a href="sample-01/boundaries/boundary_0022.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0024.jpg" loading="lazy" alt="Shot 24">
+              <div class="meta">
+                <strong>#024</strong>
+                <span>67.27–76.27s</span>
+                <span>9.00s · low · review</span>
+                <a href="sample-01/boundaries/boundary_0023.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0025.jpg" loading="lazy" alt="Shot 25">
+              <div class="meta">
+                <strong>#025</strong>
+                <span>76.27–81.73s</span>
+                <span>5.47s · high</span>
+                <a href="sample-01/boundaries/boundary_0024.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0026.jpg" loading="lazy" alt="Shot 26">
+              <div class="meta">
+                <strong>#026</strong>
+                <span>81.73–86.40s</span>
+                <span>4.67s · medium</span>
+                <a href="sample-01/boundaries/boundary_0025.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0027.jpg" loading="lazy" alt="Shot 27">
+              <div class="meta">
+                <strong>#027</strong>
+                <span>86.40–90.00s</span>
+                <span>3.60s · medium</span>
+                <a href="sample-01/boundaries/boundary_0026.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0028.jpg" loading="lazy" alt="Shot 28">
+              <div class="meta">
+                <strong>#028</strong>
+                <span>90.00–96.67s</span>
+                <span>6.67s · low · review</span>
+                <a href="sample-01/boundaries/boundary_0027.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0029.jpg" loading="lazy" alt="Shot 29">
+              <div class="meta">
+                <strong>#029</strong>
+                <span>96.67–108.47s</span>
+                <span>11.80s · medium</span>
+                <a href="sample-01/boundaries/boundary_0028.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0030.jpg" loading="lazy" alt="Shot 30">
+              <div class="meta">
+                <strong>#030</strong>
+                <span>108.47–111.53s</span>
+                <span>3.07s · high</span>
+                <a href="sample-01/boundaries/boundary_0029.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0031.jpg" loading="lazy" alt="Shot 31">
+              <div class="meta">
+                <strong>#031</strong>
+                <span>111.53–113.07s</span>
+                <span>1.53s · high</span>
+                <a href="sample-01/boundaries/boundary_0030.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0032.jpg" loading="lazy" alt="Shot 32">
+              <div class="meta">
+                <strong>#032</strong>
+                <span>113.07–114.87s</span>
+                <span>1.80s · high</span>
+                <a href="sample-01/boundaries/boundary_0031.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0033.jpg" loading="lazy" alt="Shot 33">
+              <div class="meta">
+                <strong>#033</strong>
+                <span>114.87–120.53s</span>
+                <span>5.67s · medium</span>
+                <a href="sample-01/boundaries/boundary_0032.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0034.jpg" loading="lazy" alt="Shot 34">
+              <div class="meta">
+                <strong>#034</strong>
+                <span>120.53–124.07s</span>
+                <span>3.53s · low · review</span>
+                <a href="sample-01/boundaries/boundary_0033.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0035.jpg" loading="lazy" alt="Shot 35">
+              <div class="meta">
+                <strong>#035</strong>
+                <span>124.07–125.80s</span>
+                <span>1.73s · high</span>
+                <a href="sample-01/boundaries/boundary_0034.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0036.jpg" loading="lazy" alt="Shot 36">
+              <div class="meta">
+                <strong>#036</strong>
+                <span>125.80–137.13s</span>
+                <span>11.33s · high</span>
+                <a href="sample-01/boundaries/boundary_0035.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0037.jpg" loading="lazy" alt="Shot 37">
+              <div class="meta">
+                <strong>#037</strong>
+                <span>137.13–142.80s</span>
+                <span>5.67s · high</span>
+                <a href="sample-01/boundaries/boundary_0036.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0038.jpg" loading="lazy" alt="Shot 38">
+              <div class="meta">
+                <strong>#038</strong>
+                <span>142.80–144.33s</span>
+                <span>1.53s · high</span>
+                <a href="sample-01/boundaries/boundary_0037.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0039.jpg" loading="lazy" alt="Shot 39">
+              <div class="meta">
+                <strong>#039</strong>
+                <span>144.33–146.13s</span>
+                <span>1.80s · medium</span>
+                <a href="sample-01/boundaries/boundary_0038.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0040.jpg" loading="lazy" alt="Shot 40">
+              <div class="meta">
+                <strong>#040</strong>
+                <span>146.13–147.80s</span>
+                <span>1.67s · medium</span>
+                <a href="sample-01/boundaries/boundary_0039.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0041.jpg" loading="lazy" alt="Shot 41">
+              <div class="meta">
+                <strong>#041</strong>
+                <span>147.80–152.87s</span>
+                <span>5.07s · high</span>
+                <a href="sample-01/boundaries/boundary_0040.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0042.jpg" loading="lazy" alt="Shot 42">
+              <div class="meta">
+                <strong>#042</strong>
+                <span>152.87–156.80s</span>
+                <span>3.93s · high</span>
+                <a href="sample-01/boundaries/boundary_0041.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0043.jpg" loading="lazy" alt="Shot 43">
+              <div class="meta">
+                <strong>#043</strong>
+                <span>156.80–157.13s</span>
+                <span>0.33s · high · review</span>
+                <a href="sample-01/boundaries/boundary_0042.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0044.jpg" loading="lazy" alt="Shot 44">
+              <div class="meta">
+                <strong>#044</strong>
+                <span>157.13–158.33s</span>
+                <span>1.20s · low · review</span>
+                <a href="sample-01/boundaries/boundary_0043.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0045.jpg" loading="lazy" alt="Shot 45">
+              <div class="meta">
+                <strong>#045</strong>
+                <span>158.33–159.40s</span>
+                <span>1.07s · medium</span>
+                <a href="sample-01/boundaries/boundary_0044.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-01/previews/shot_0046.jpg" loading="lazy" alt="Shot 46">
+              <div class="meta">
+                <strong>#046</strong>
+                <span>159.40–160.33s</span>
+                <span>0.93s · high</span>
+                <a href="sample-01/boundaries/boundary_0045.jpg">切点前后</a>
+              </div>
+            </article>
+            
+              </div>
+            </section>
+            
+            <section>
+              <div class="heading">
+                <div>
+                  <h2>sample-02.mp4</h2>
+                  <p>65 个镜头 · 137.93 秒 ·
+                     7 个建议复核</p>
+                </div>
+                <a href="sample-02/contact-sheet.jpg">打开总览图</a>
+              </div>
+              <div class="grid">
+                
+            <article class="shot">
+              <img src="sample-02/previews/shot_0001.jpg" loading="lazy" alt="Shot 1">
+              <div class="meta">
+                <strong>#001</strong>
+                <span>0.00–2.67s</span>
+                <span>2.67s · high</span>
+                <span>视频起点</span>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0002.jpg" loading="lazy" alt="Shot 2">
+              <div class="meta">
+                <strong>#002</strong>
+                <span>2.67–4.93s</span>
+                <span>2.27s · high</span>
+                <a href="sample-02/boundaries/boundary_0001.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0003.jpg" loading="lazy" alt="Shot 3">
+              <div class="meta">
+                <strong>#003</strong>
+                <span>4.93–6.00s</span>
+                <span>1.07s · high</span>
+                <a href="sample-02/boundaries/boundary_0002.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0004.jpg" loading="lazy" alt="Shot 4">
+              <div class="meta">
+                <strong>#004</strong>
+                <span>6.00–6.87s</span>
+                <span>0.87s · high</span>
+                <a href="sample-02/boundaries/boundary_0003.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0005.jpg" loading="lazy" alt="Shot 5">
+              <div class="meta">
+                <strong>#005</strong>
+                <span>6.87–8.67s</span>
+                <span>1.80s · high</span>
+                <a href="sample-02/boundaries/boundary_0004.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0006.jpg" loading="lazy" alt="Shot 6">
+              <div class="meta">
+                <strong>#006</strong>
+                <span>8.67–9.87s</span>
+                <span>1.20s · high</span>
+                <a href="sample-02/boundaries/boundary_0005.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0007.jpg" loading="lazy" alt="Shot 7">
+              <div class="meta">
+                <strong>#007</strong>
+                <span>9.87–11.40s</span>
+                <span>1.53s · high</span>
+                <a href="sample-02/boundaries/boundary_0006.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0008.jpg" loading="lazy" alt="Shot 8">
+              <div class="meta">
+                <strong>#008</strong>
+                <span>11.40–12.00s</span>
+                <span>0.60s · medium</span>
+                <a href="sample-02/boundaries/boundary_0007.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0009.jpg" loading="lazy" alt="Shot 9">
+              <div class="meta">
+                <strong>#009</strong>
+                <span>12.00–13.67s</span>
+                <span>1.67s · medium</span>
+                <a href="sample-02/boundaries/boundary_0008.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0010.jpg" loading="lazy" alt="Shot 10">
+              <div class="meta">
+                <strong>#010</strong>
+                <span>13.67–15.80s</span>
+                <span>2.13s · high</span>
+                <a href="sample-02/boundaries/boundary_0009.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0011.jpg" loading="lazy" alt="Shot 11">
+              <div class="meta">
+                <strong>#011</strong>
+                <span>15.80–16.20s</span>
+                <span>0.40s · high · review</span>
+                <a href="sample-02/boundaries/boundary_0010.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0012.jpg" loading="lazy" alt="Shot 12">
+              <div class="meta">
+                <strong>#012</strong>
+                <span>16.20–17.53s</span>
+                <span>1.33s · low · review</span>
+                <a href="sample-02/boundaries/boundary_0011.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0013.jpg" loading="lazy" alt="Shot 13">
+              <div class="meta">
+                <strong>#013</strong>
+                <span>17.53–18.07s</span>
+                <span>0.53s · medium</span>
+                <a href="sample-02/boundaries/boundary_0012.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0014.jpg" loading="lazy" alt="Shot 14">
+              <div class="meta">
+                <strong>#014</strong>
+                <span>18.07–18.93s</span>
+                <span>0.87s · low · review</span>
+                <a href="sample-02/boundaries/boundary_0013.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0015.jpg" loading="lazy" alt="Shot 15">
+              <div class="meta">
+                <strong>#015</strong>
+                <span>18.93–20.73s</span>
+                <span>1.80s · medium</span>
+                <a href="sample-02/boundaries/boundary_0014.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0016.jpg" loading="lazy" alt="Shot 16">
+              <div class="meta">
+                <strong>#016</strong>
+                <span>20.73–21.33s</span>
+                <span>0.60s · medium</span>
+                <a href="sample-02/boundaries/boundary_0015.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0017.jpg" loading="lazy" alt="Shot 17">
+              <div class="meta">
+                <strong>#017</strong>
+                <span>21.33–23.33s</span>
+                <span>2.00s · high</span>
+                <a href="sample-02/boundaries/boundary_0016.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0018.jpg" loading="lazy" alt="Shot 18">
+              <div class="meta">
+                <strong>#018</strong>
+                <span>23.33–24.53s</span>
+                <span>1.20s · high</span>
+                <a href="sample-02/boundaries/boundary_0017.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0019.jpg" loading="lazy" alt="Shot 19">
+              <div class="meta">
+                <strong>#019</strong>
+                <span>24.53–26.40s</span>
+                <span>1.87s · high</span>
+                <a href="sample-02/boundaries/boundary_0018.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0020.jpg" loading="lazy" alt="Shot 20">
+              <div class="meta">
+                <strong>#020</strong>
+                <span>26.40–27.47s</span>
+                <span>1.07s · medium</span>
+                <a href="sample-02/boundaries/boundary_0019.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0021.jpg" loading="lazy" alt="Shot 21">
+              <div class="meta">
+                <strong>#021</strong>
+                <span>27.47–28.40s</span>
+                <span>0.93s · medium</span>
+                <a href="sample-02/boundaries/boundary_0020.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0022.jpg" loading="lazy" alt="Shot 22">
+              <div class="meta">
+                <strong>#022</strong>
+                <span>28.40–30.93s</span>
+                <span>2.53s · high</span>
+                <a href="sample-02/boundaries/boundary_0021.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0023.jpg" loading="lazy" alt="Shot 23">
+              <div class="meta">
+                <strong>#023</strong>
+                <span>30.93–32.40s</span>
+                <span>1.47s · high</span>
+                <a href="sample-02/boundaries/boundary_0022.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0024.jpg" loading="lazy" alt="Shot 24">
+              <div class="meta">
+                <strong>#024</strong>
+                <span>32.40–33.47s</span>
+                <span>1.07s · high</span>
+                <a href="sample-02/boundaries/boundary_0023.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0025.jpg" loading="lazy" alt="Shot 25">
+              <div class="meta">
+                <strong>#025</strong>
+                <span>33.47–34.20s</span>
+                <span>0.73s · high</span>
+                <a href="sample-02/boundaries/boundary_0024.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0026.jpg" loading="lazy" alt="Shot 26">
+              <div class="meta">
+                <strong>#026</strong>
+                <span>34.20–34.87s</span>
+                <span>0.67s · medium</span>
+                <a href="sample-02/boundaries/boundary_0025.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0027.jpg" loading="lazy" alt="Shot 27">
+              <div class="meta">
+                <strong>#027</strong>
+                <span>34.87–36.00s</span>
+                <span>1.13s · medium</span>
+                <a href="sample-02/boundaries/boundary_0026.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0028.jpg" loading="lazy" alt="Shot 28">
+              <div class="meta">
+                <strong>#028</strong>
+                <span>36.00–37.13s</span>
+                <span>1.13s · medium</span>
+                <a href="sample-02/boundaries/boundary_0027.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0029.jpg" loading="lazy" alt="Shot 29">
+              <div class="meta">
+                <strong>#029</strong>
+                <span>37.13–39.00s</span>
+                <span>1.87s · high</span>
+                <a href="sample-02/boundaries/boundary_0028.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0030.jpg" loading="lazy" alt="Shot 30">
+              <div class="meta">
+                <strong>#030</strong>
+                <span>39.00–40.33s</span>
+                <span>1.33s · high</span>
+                <a href="sample-02/boundaries/boundary_0029.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0031.jpg" loading="lazy" alt="Shot 31">
+              <div class="meta">
+                <strong>#031</strong>
+                <span>40.33–43.47s</span>
+                <span>3.13s · medium</span>
+                <a href="sample-02/boundaries/boundary_0030.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0032.jpg" loading="lazy" alt="Shot 32">
+              <div class="meta">
+                <strong>#032</strong>
+                <span>43.47–44.27s</span>
+                <span>0.80s · high</span>
+                <a href="sample-02/boundaries/boundary_0031.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0033.jpg" loading="lazy" alt="Shot 33">
+              <div class="meta">
+                <strong>#033</strong>
+                <span>44.27–45.73s</span>
+                <span>1.47s · high</span>
+                <a href="sample-02/boundaries/boundary_0032.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0034.jpg" loading="lazy" alt="Shot 34">
+              <div class="meta">
+                <strong>#034</strong>
+                <span>45.73–46.40s</span>
+                <span>0.67s · high</span>
+                <a href="sample-02/boundaries/boundary_0033.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0035.jpg" loading="lazy" alt="Shot 35">
+              <div class="meta">
+                <strong>#035</strong>
+                <span>46.40–47.47s</span>
+                <span>1.07s · high</span>
+                <a href="sample-02/boundaries/boundary_0034.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0036.jpg" loading="lazy" alt="Shot 36">
+              <div class="meta">
+                <strong>#036</strong>
+                <span>47.47–48.13s</span>
+                <span>0.67s · low · review</span>
+                <a href="sample-02/boundaries/boundary_0035.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0037.jpg" loading="lazy" alt="Shot 37">
+              <div class="meta">
+                <strong>#037</strong>
+                <span>48.13–48.87s</span>
+                <span>0.73s · high</span>
+                <a href="sample-02/boundaries/boundary_0036.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0038.jpg" loading="lazy" alt="Shot 38">
+              <div class="meta">
+                <strong>#038</strong>
+                <span>48.87–50.53s</span>
+                <span>1.67s · high</span>
+                <a href="sample-02/boundaries/boundary_0037.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0039.jpg" loading="lazy" alt="Shot 39">
+              <div class="meta">
+                <strong>#039</strong>
+                <span>50.53–51.33s</span>
+                <span>0.80s · high</span>
+                <a href="sample-02/boundaries/boundary_0038.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0040.jpg" loading="lazy" alt="Shot 40">
+              <div class="meta">
+                <strong>#040</strong>
+                <span>51.33–52.73s</span>
+                <span>1.40s · medium</span>
+                <a href="sample-02/boundaries/boundary_0039.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0041.jpg" loading="lazy" alt="Shot 41">
+              <div class="meta">
+                <strong>#041</strong>
+                <span>52.73–66.80s</span>
+                <span>14.07s · high</span>
+                <a href="sample-02/boundaries/boundary_0040.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0042.jpg" loading="lazy" alt="Shot 42">
+              <div class="meta">
+                <strong>#042</strong>
+                <span>66.80–67.13s</span>
+                <span>0.33s · high · review</span>
+                <a href="sample-02/boundaries/boundary_0041.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0043.jpg" loading="lazy" alt="Shot 43">
+              <div class="meta">
+                <strong>#043</strong>
+                <span>67.13–70.00s</span>
+                <span>2.87s · low · review</span>
+                <a href="sample-02/boundaries/boundary_0042.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0044.jpg" loading="lazy" alt="Shot 44">
+              <div class="meta">
+                <strong>#044</strong>
+                <span>70.00–72.07s</span>
+                <span>2.07s · high</span>
+                <a href="sample-02/boundaries/boundary_0043.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0045.jpg" loading="lazy" alt="Shot 45">
+              <div class="meta">
+                <strong>#045</strong>
+                <span>72.07–76.00s</span>
+                <span>3.93s · medium</span>
+                <a href="sample-02/boundaries/boundary_0044.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0046.jpg" loading="lazy" alt="Shot 46">
+              <div class="meta">
+                <strong>#046</strong>
+                <span>76.00–88.53s</span>
+                <span>12.53s · high</span>
+                <a href="sample-02/boundaries/boundary_0045.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0047.jpg" loading="lazy" alt="Shot 47">
+              <div class="meta">
+                <strong>#047</strong>
+                <span>88.53–97.60s</span>
+                <span>9.07s · high</span>
+                <a href="sample-02/boundaries/boundary_0046.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0048.jpg" loading="lazy" alt="Shot 48">
+              <div class="meta">
+                <strong>#048</strong>
+                <span>97.60–99.07s</span>
+                <span>1.47s · high</span>
+                <a href="sample-02/boundaries/boundary_0047.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0049.jpg" loading="lazy" alt="Shot 49">
+              <div class="meta">
+                <strong>#049</strong>
+                <span>99.07–100.00s</span>
+                <span>0.93s · medium</span>
+                <a href="sample-02/boundaries/boundary_0048.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0050.jpg" loading="lazy" alt="Shot 50">
+              <div class="meta">
+                <strong>#050</strong>
+                <span>100.00–102.13s</span>
+                <span>2.13s · medium</span>
+                <a href="sample-02/boundaries/boundary_0049.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0051.jpg" loading="lazy" alt="Shot 51">
+              <div class="meta">
+                <strong>#051</strong>
+                <span>102.13–102.87s</span>
+                <span>0.73s · high</span>
+                <a href="sample-02/boundaries/boundary_0050.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0052.jpg" loading="lazy" alt="Shot 52">
+              <div class="meta">
+                <strong>#052</strong>
+                <span>102.87–104.20s</span>
+                <span>1.33s · high</span>
+                <a href="sample-02/boundaries/boundary_0051.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0053.jpg" loading="lazy" alt="Shot 53">
+              <div class="meta">
+                <strong>#053</strong>
+                <span>104.20–105.53s</span>
+                <span>1.33s · high</span>
+                <a href="sample-02/boundaries/boundary_0052.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0054.jpg" loading="lazy" alt="Shot 54">
+              <div class="meta">
+                <strong>#054</strong>
+                <span>105.53–106.93s</span>
+                <span>1.40s · high</span>
+                <a href="sample-02/boundaries/boundary_0053.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0055.jpg" loading="lazy" alt="Shot 55">
+              <div class="meta">
+                <strong>#055</strong>
+                <span>106.93–110.13s</span>
+                <span>3.20s · high</span>
+                <a href="sample-02/boundaries/boundary_0054.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0056.jpg" loading="lazy" alt="Shot 56">
+              <div class="meta">
+                <strong>#056</strong>
+                <span>110.13–116.07s</span>
+                <span>5.93s · high</span>
+                <a href="sample-02/boundaries/boundary_0055.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0057.jpg" loading="lazy" alt="Shot 57">
+              <div class="meta">
+                <strong>#057</strong>
+                <span>116.07–122.53s</span>
+                <span>6.47s · high</span>
+                <a href="sample-02/boundaries/boundary_0056.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0058.jpg" loading="lazy" alt="Shot 58">
+              <div class="meta">
+                <strong>#058</strong>
+                <span>122.53–127.07s</span>
+                <span>4.53s · high</span>
+                <a href="sample-02/boundaries/boundary_0057.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0059.jpg" loading="lazy" alt="Shot 59">
+              <div class="meta">
+                <strong>#059</strong>
+                <span>127.07–127.53s</span>
+                <span>0.47s · high</span>
+                <a href="sample-02/boundaries/boundary_0058.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0060.jpg" loading="lazy" alt="Shot 60">
+              <div class="meta">
+                <strong>#060</strong>
+                <span>127.53–129.47s</span>
+                <span>1.93s · low · review</span>
+                <a href="sample-02/boundaries/boundary_0059.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0061.jpg" loading="lazy" alt="Shot 61">
+              <div class="meta">
+                <strong>#061</strong>
+                <span>129.47–131.33s</span>
+                <span>1.87s · high</span>
+                <a href="sample-02/boundaries/boundary_0060.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0062.jpg" loading="lazy" alt="Shot 62">
+              <div class="meta">
+                <strong>#062</strong>
+                <span>131.33–132.47s</span>
+                <span>1.13s · high</span>
+                <a href="sample-02/boundaries/boundary_0061.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0063.jpg" loading="lazy" alt="Shot 63">
+              <div class="meta">
+                <strong>#063</strong>
+                <span>132.47–133.93s</span>
+                <span>1.47s · high</span>
+                <a href="sample-02/boundaries/boundary_0062.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0064.jpg" loading="lazy" alt="Shot 64">
+              <div class="meta">
+                <strong>#064</strong>
+                <span>133.93–136.13s</span>
+                <span>2.20s · high</span>
+                <a href="sample-02/boundaries/boundary_0063.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-02/previews/shot_0065.jpg" loading="lazy" alt="Shot 65">
+              <div class="meta">
+                <strong>#065</strong>
+                <span>136.13–137.93s</span>
+                <span>1.80s · medium</span>
+                <a href="sample-02/boundaries/boundary_0064.jpg">切点前后</a>
+              </div>
+            </article>
+            
+              </div>
+            </section>
+            
+            <section>
+              <div class="heading">
+                <div>
+                  <h2>sample-03.mp4</h2>
+                  <p>37 个镜头 · 157.73 秒 ·
+                     18 个建议复核</p>
+                </div>
+                <a href="sample-03/contact-sheet.jpg">打开总览图</a>
+              </div>
+              <div class="grid">
+                
+            <article class="shot">
+              <img src="sample-03/previews/shot_0001.jpg" loading="lazy" alt="Shot 1">
+              <div class="meta">
+                <strong>#001</strong>
+                <span>0.00–1.47s</span>
+                <span>1.47s · high</span>
+                <span>视频起点</span>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0002.jpg" loading="lazy" alt="Shot 2">
+              <div class="meta">
+                <strong>#002</strong>
+                <span>1.47–3.47s</span>
+                <span>2.00s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0001.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0003.jpg" loading="lazy" alt="Shot 3">
+              <div class="meta">
+                <strong>#003</strong>
+                <span>3.47–5.07s</span>
+                <span>1.60s · high</span>
+                <a href="sample-03/boundaries/boundary_0002.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0004.jpg" loading="lazy" alt="Shot 4">
+              <div class="meta">
+                <strong>#004</strong>
+                <span>5.07–6.47s</span>
+                <span>1.40s · high</span>
+                <a href="sample-03/boundaries/boundary_0003.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0005.jpg" loading="lazy" alt="Shot 5">
+              <div class="meta">
+                <strong>#005</strong>
+                <span>6.47–7.07s</span>
+                <span>0.60s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0004.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0006.jpg" loading="lazy" alt="Shot 6">
+              <div class="meta">
+                <strong>#006</strong>
+                <span>7.07–8.00s</span>
+                <span>0.93s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0005.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0007.jpg" loading="lazy" alt="Shot 7">
+              <div class="meta">
+                <strong>#007</strong>
+                <span>8.00–8.80s</span>
+                <span>0.80s · high</span>
+                <a href="sample-03/boundaries/boundary_0006.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0008.jpg" loading="lazy" alt="Shot 8">
+              <div class="meta">
+                <strong>#008</strong>
+                <span>8.80–9.27s</span>
+                <span>0.47s · medium</span>
+                <a href="sample-03/boundaries/boundary_0007.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0009.jpg" loading="lazy" alt="Shot 9">
+              <div class="meta">
+                <strong>#009</strong>
+                <span>9.27–10.53s</span>
+                <span>1.27s · medium</span>
+                <a href="sample-03/boundaries/boundary_0008.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0010.jpg" loading="lazy" alt="Shot 10">
+              <div class="meta">
+                <strong>#010</strong>
+                <span>10.53–11.53s</span>
+                <span>1.00s · high</span>
+                <a href="sample-03/boundaries/boundary_0009.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0011.jpg" loading="lazy" alt="Shot 11">
+              <div class="meta">
+                <strong>#011</strong>
+                <span>11.53–13.00s</span>
+                <span>1.47s · medium</span>
+                <a href="sample-03/boundaries/boundary_0010.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0012.jpg" loading="lazy" alt="Shot 12">
+              <div class="meta">
+                <strong>#012</strong>
+                <span>13.00–16.73s</span>
+                <span>3.73s · high</span>
+                <a href="sample-03/boundaries/boundary_0011.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0013.jpg" loading="lazy" alt="Shot 13">
+              <div class="meta">
+                <strong>#013</strong>
+                <span>16.73–26.87s</span>
+                <span>10.13s · medium</span>
+                <a href="sample-03/boundaries/boundary_0012.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0014.jpg" loading="lazy" alt="Shot 14">
+              <div class="meta">
+                <strong>#014</strong>
+                <span>26.87–33.07s</span>
+                <span>6.20s · high</span>
+                <a href="sample-03/boundaries/boundary_0013.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0015.jpg" loading="lazy" alt="Shot 15">
+              <div class="meta">
+                <strong>#015</strong>
+                <span>33.07–36.67s</span>
+                <span>3.60s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0014.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0016.jpg" loading="lazy" alt="Shot 16">
+              <div class="meta">
+                <strong>#016</strong>
+                <span>36.67–45.67s</span>
+                <span>9.00s · medium</span>
+                <a href="sample-03/boundaries/boundary_0015.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0017.jpg" loading="lazy" alt="Shot 17">
+              <div class="meta">
+                <strong>#017</strong>
+                <span>45.67–46.13s</span>
+                <span>0.47s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0016.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0018.jpg" loading="lazy" alt="Shot 18">
+              <div class="meta">
+                <strong>#018</strong>
+                <span>46.13–56.93s</span>
+                <span>10.80s · medium</span>
+                <a href="sample-03/boundaries/boundary_0017.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0019.jpg" loading="lazy" alt="Shot 19">
+              <div class="meta">
+                <strong>#019</strong>
+                <span>56.93–61.20s</span>
+                <span>4.27s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0018.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0020.jpg" loading="lazy" alt="Shot 20">
+              <div class="meta">
+                <strong>#020</strong>
+                <span>61.20–61.87s</span>
+                <span>0.67s · medium</span>
+                <a href="sample-03/boundaries/boundary_0019.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0021.jpg" loading="lazy" alt="Shot 21">
+              <div class="meta">
+                <strong>#021</strong>
+                <span>61.87–63.67s</span>
+                <span>1.80s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0020.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0022.jpg" loading="lazy" alt="Shot 22">
+              <div class="meta">
+                <strong>#022</strong>
+                <span>63.67–63.93s</span>
+                <span>0.27s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0021.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0023.jpg" loading="lazy" alt="Shot 23">
+              <div class="meta">
+                <strong>#023</strong>
+                <span>63.93–78.60s</span>
+                <span>14.67s · medium</span>
+                <a href="sample-03/boundaries/boundary_0022.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0024.jpg" loading="lazy" alt="Shot 24">
+              <div class="meta">
+                <strong>#024</strong>
+                <span>78.60–102.40s</span>
+                <span>23.80s · medium</span>
+                <a href="sample-03/boundaries/boundary_0023.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0025.jpg" loading="lazy" alt="Shot 25">
+              <div class="meta">
+                <strong>#025</strong>
+                <span>102.40–104.33s</span>
+                <span>1.93s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0024.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0026.jpg" loading="lazy" alt="Shot 26">
+              <div class="meta">
+                <strong>#026</strong>
+                <span>104.33–106.87s</span>
+                <span>2.53s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0025.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0027.jpg" loading="lazy" alt="Shot 27">
+              <div class="meta">
+                <strong>#027</strong>
+                <span>106.87–111.80s</span>
+                <span>4.93s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0026.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0028.jpg" loading="lazy" alt="Shot 28">
+              <div class="meta">
+                <strong>#028</strong>
+                <span>111.80–113.40s</span>
+                <span>1.60s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0027.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0029.jpg" loading="lazy" alt="Shot 29">
+              <div class="meta">
+                <strong>#029</strong>
+                <span>113.40–121.53s</span>
+                <span>8.13s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0028.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0030.jpg" loading="lazy" alt="Shot 30">
+              <div class="meta">
+                <strong>#030</strong>
+                <span>121.53–125.07s</span>
+                <span>3.53s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0029.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0031.jpg" loading="lazy" alt="Shot 31">
+              <div class="meta">
+                <strong>#031</strong>
+                <span>125.07–126.80s</span>
+                <span>1.73s · high</span>
+                <a href="sample-03/boundaries/boundary_0030.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0032.jpg" loading="lazy" alt="Shot 32">
+              <div class="meta">
+                <strong>#032</strong>
+                <span>126.80–128.00s</span>
+                <span>1.20s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0031.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0033.jpg" loading="lazy" alt="Shot 33">
+              <div class="meta">
+                <strong>#033</strong>
+                <span>128.00–130.00s</span>
+                <span>2.00s · medium</span>
+                <a href="sample-03/boundaries/boundary_0032.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0034.jpg" loading="lazy" alt="Shot 34">
+              <div class="meta">
+                <strong>#034</strong>
+                <span>130.00–133.53s</span>
+                <span>3.53s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0033.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0035.jpg" loading="lazy" alt="Shot 35">
+              <div class="meta">
+                <strong>#035</strong>
+                <span>133.53–138.33s</span>
+                <span>4.80s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0034.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0036.jpg" loading="lazy" alt="Shot 36">
+              <div class="meta">
+                <strong>#036</strong>
+                <span>138.33–149.07s</span>
+                <span>10.73s · low · review</span>
+                <a href="sample-03/boundaries/boundary_0035.jpg">切点前后</a>
+              </div>
+            </article>
+            
+
+            <article class="shot">
+              <img src="sample-03/previews/shot_0037.jpg" loading="lazy" alt="Shot 37">
+              <div class="meta">
+                <strong>#037</strong>
+                <span>149.07–157.73s</span>
+                <span>8.67s · medium</span>
+                <a href="sample-03/boundaries/boundary_0036.jpg">切点前后</a>
+              </div>
+            </article>
+            
+              </div>
+            </section>
+            
+  
+  <footer>预览图取自镜头中点；每条切镜的记录均可通过“切点前后”人工复核。</footer>
+</main>
+</body>
+</html>
